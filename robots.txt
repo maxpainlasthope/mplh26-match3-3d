@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://maxpainlasthope.github.io/mplh26-match3-3d/sitemap.xml

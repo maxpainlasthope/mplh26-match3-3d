@@ -1,0 +1,22 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#e8dcff"><title>Share MPLH 26 : Match3 3D | MPLH Game</title><meta name="description" content="Share the official MPLH 26 : Match3 3D website with friends and explore this colorful premium puzzle game."><link rel="canonical" href="https://maxpainlasthope.github.io/mplh26-match3-3d/share.html"><link rel="icon" href="assets/favicon.png" type="image/png"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png"><link rel="stylesheet" href="styles.css"></head><body>
+<a href="#main" class="skip-link">Skip to content</a><header class="site-header"><div class="shell nav"><a class="brand" href="index.html"><img src="assets/icon-192.png" alt="" width="43" height="43"><span>MPLH Game</span></a><nav class="nav-links" aria-label="Main navigation"><a href="index.html">Game</a><a href="share.html" aria-current="page">Share</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a><a href="https://maxpainlasthope.github.io/mplh-social-links/" target="_blank" rel="noopener noreferrer">Social Links ↗</a></nav></div></header>
+<main id="main" class="shell"><section class="hero"><div><span class="eyebrow">Share the adventure</span><h1>Spread the <span class="gradient-text">fun!</span></h1><p class="lead">Invite your friends to discover <strong>MPLH 26 : Match3 3D</strong> by MPLH Game.</p><div class="share-grid"><button type="button" id="native-share">↗ Share game</button><button type="button" id="copy-url">⧉ Copy link</button><a id="x-share" target="_blank" rel="noopener noreferrer" href="https://twitter.com/intent/tweet?text=Check%20out%20MPLH%2026%20%3A%20Match3%203D%20by%20MPLH%20Game!&url=https%3A%2F%2Fmaxpainlasthope.github.io%2Fmplh26-match3-3d%2F">𝕏 Share on X</a><a id="whatsapp-share" target="_blank" rel="noopener noreferrer" href="https://api.whatsapp.com/send?text=Check%20out%20MPLH%2026%20%3A%20Match3%203D%20by%20MPLH%20Game!%20https%3A%2F%2Fmaxpainlasthope.github.io%2Fmplh26-match3-3d%2F">◉ WhatsApp</a><a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmaxpainlasthope.github.io%2Fmplh26-match3-3d%2F">f Facebook</a><a href="index.html">⌂ Official game page</a></div><p id="copy-status" role="status" aria-live="polite"></p><p class="muted">Share links direct people to the official game page. The game is sold separately through supported stores when available.</p></div><div class="hero-art"><picture><source type="image/webp" srcset="assets/mplh26-logo.webp"><img src="assets/mplh26-logo.png" alt="MPLH 26 : Match3 3D game logo" width="1024" height="1024"></picture></div></section></main><footer><div class="shell footer-inner"><p>© 2026 MPLH Game. All rights reserved.</p><div><a href="privacy.html">Privacy Policy</a><a href="support.html">Support</a></div></div></footer>
+<script>
+(function(){
+ 'use strict';
+ const url='https://maxpainlasthope.github.io/mplh26-match3-3d/';
+ const title='MPLH 26 : Match3 3D';
+ const text='Check out MPLH 26 : Match3 3D by MPLH Game!';
+ const status=document.getElementById('copy-status');
+ const share=document.getElementById('native-share');
+ const copy=document.getElementById('copy-url');
+ share.addEventListener('click',async()=>{
+  if(navigator.share){try{await navigator.share({title,text,url});status.textContent='';return;}catch(err){if(err.name==='AbortError')return;}}
+  status.textContent='Use the sharing links below, or copy the game URL.';
+ });
+ copy.addEventListener('click',async()=>{
+   try{if(!navigator.clipboard||!window.isSecureContext)throw Error('No clipboard access');await navigator.clipboard.writeText(url);status.textContent='Game link copied!';}
+   catch(_){status.textContent='Copy this URL: '+url;}
+ });
+})();
+</script></body></html>
